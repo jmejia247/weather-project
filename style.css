@@ -88,7 +88,7 @@ main {
 	background: #f2f9fe;
     /* background: darkgreen; */
 	z-index: -1
-}
+} 
 
 .cloud:after {
 	width: 110px; height: 100px;
@@ -98,7 +98,6 @@ main {
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 }
-
 .cloud:before {
 	width: 200px; height: 180px;
 	top: -90px; right: 50px;
@@ -130,4 +129,40 @@ main {
 	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
 }
 
+.sun {
 
+	transition: all 0.75s ease-out;
+	
+    display: flex;
+    flex-direction: column;
+	align-content: center;
+    align-items: center;
+	justify-content: center;
+    font-family: 'Lobster', cursive;
+
+	width: 210px; height: 210px;
+
+	background-color: #ff4e00;
+	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	margin: 120px auto 20px;
+}
+
+.sun form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.sun form label{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

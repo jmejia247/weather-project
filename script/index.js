@@ -1,4 +1,4 @@
-document.querySelector(".cloud form").addEventListener("submit", (event) => {
+document.querySelector("#header form").addEventListener("submit", (event) => {
     event.preventDefault()
     const location = event.target.location.value
     const info = document.querySelector('#results')
@@ -7,6 +7,12 @@ document.querySelector(".cloud form").addEventListener("submit", (event) => {
         console.log(data)
         // info.firstElementChild.remove()
         removeAllChildNodes(info)
+
+        if (data.current_condition[0].weatherDesc[0].value === "Clear") {
+            console.log(data.current_condition[0].weatherDesc[0].value)
+            document.querySelector("#header").classList.remove("cloud")
+            document.querySelector("#header").classList.add("sun")
+        }
 
         if (history.firstElementChild.textContent === 'No previous searches made') {
             history.firstElementChild.remove()
@@ -62,7 +68,7 @@ const container = document.querySelector(".container")
 const cloud = document.querySelector(".cloud")
 
 container.addEventListener("mousemove", (event) => {
-    console.log(event)
+    // console.log(event)
     let xAxis = (window.innerWidth / 2 - event.pageX) / 25; 
     let yAxis = (window.innerHeight / 2 - event.pageY) / 25; 
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
