@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script defer src="./script/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header class="cloud">
+                <h1>Weather App</h1>
+               <form >
+                    <label>
+                        Pick a location
+                        <input type="text" name="location" class="textbox">
+                    </label>
+                    <button type="submit" class="textbutton">Get Weather</button> 
+               </form>
+            </header>
+            <main>
+                <article id="results">
+                    <p>Choose a location to view the weather</p>
+                </article>
+        
+                <article id="previous">
+                    <label for="">Previous Searches</label>
+                    <ul class='history'>
+                        <li>No previous searches made</li>
+                    </ul>
+                </article>
+        
+                <article id="forecast">
+                    <ul>
+        
+                    </ul>
+                    <ul>
+        
+                    </ul>
+                    <ul>
+        
+                    </ul>
+                </article>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
